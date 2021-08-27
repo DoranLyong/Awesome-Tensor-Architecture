@@ -1,1 +1,1 @@
-# Awesome_Tensor_Architecture
+# Awesome Tensor Architecture (Study of Neural Network Model)

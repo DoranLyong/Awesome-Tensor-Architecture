@@ -1,6 +1,6 @@
 # Involution 
 
-
+This project format follows [here](https://github.com/DoranLyong/Awesome-Human-Activity-Recognition/tree/main/tutorial_04).
 
 
 

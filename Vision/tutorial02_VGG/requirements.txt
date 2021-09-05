@@ -1,2 +1,5 @@
 tqdm
 Pillow 
+numpy 
+torch 
+tabulate

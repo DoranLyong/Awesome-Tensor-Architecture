@@ -73,7 +73,7 @@ if __name__ == "__main__":
     filePaths.sort()
     random.shuffle(filePaths)
 
-    split = int(0.8 * len(filePaths)) 
+    split = int(0.8 * len(filePaths))   # split into 8:2
     train_filePaths = filePaths[:split]
     val_filePaths = filePaths[split:]
 
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     
     
 
-    # ===== Make a directory for save 
+    # ===== Make a directory to save 
     jpg_saveDIR = Path(args.output_dir)
     jpg_saveDIR.mkdir(parents=True, exist_ok=True) 
 

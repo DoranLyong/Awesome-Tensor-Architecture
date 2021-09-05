@@ -22,12 +22,11 @@ class VGG(nn.Module):
                 }
 
 
-    def __init__(self, params,  num_classes:int, type:str = 'VGG16'):
+    def __init__(self, in_channels:int=3,  num_classes:int=10, type:str = 'VGG16'):
         super(VGG, self).__init__() 
 
         # ===== Conv-layer 
-#        self.in_channels = params.num_channels 
-        self.in_channels = 3
+        self.in_channels = in_channels
         self.conv_layers = self.create_conv_layers(self.VGG_types[type])
 
 
@@ -67,7 +66,7 @@ class VGG(nn.Module):
 
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        assert x.ndimension() == 4, f"Input tensor to involution must be 4d! but, {x.ndimension()}d tensor is given"
+        assert x.ndimension() == 4, f"Input tensor to VGG must be 4d! but, {x.ndimension()}d tensor is given"
 
         x = self.conv_layers(x) # input := [1, 3, 224, 224]  =>  output := [1, 512, 7, 7]
 
@@ -88,7 +87,7 @@ if __name__ == "__main__":
     img = torch.randn(32, 3, 224, 224).to(device)    
 
     # ====== Set model 
-    model = VGG(3,  num_classes=10, type = 'VGG16').to(device)
+    model = VGG(in_channels=3,  num_classes=10, type = 'VGG16').to(device)
     print(model)  # by __repr__ method     
 
 

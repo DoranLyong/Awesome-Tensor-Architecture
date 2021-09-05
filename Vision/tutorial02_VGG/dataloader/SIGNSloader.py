@@ -94,12 +94,14 @@ def fetch_dataloader(types:list, data_dir:str, params) -> dict:
 
     data_types = ['train', 'val', 'test']
     for split in data_types:
+
         if split in types: 
             path = osp.join(data_dir, f"{split}_signs")
 
             # use the 'train_transformer' if training data, 
             # else use 'eval_transformer' without random flip
             if split == 'train':
+
                 dl = DataLoader(SIGNSDataset(path, train_transformer), 
                                 batch_size=params.batch_size, 
                                 shuffle=True,
@@ -116,4 +118,4 @@ def fetch_dataloader(types:list, data_dir:str, params) -> dict:
             
             dataloaders[split] = dl
 
-        return dataloaders
+    return dataloaders

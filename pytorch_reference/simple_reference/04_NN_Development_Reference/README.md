@@ -1,4 +1,4 @@
-Running by [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DoranLyong/Awesome-Tensor-Architecture/blob/main/pytorch_reference/simple_reference/03_Development_with_PyTorch/03_dev_pipeline.ipynb)
+Running by 
 
 
 
@@ -6,7 +6,7 @@ Running by [![Open In Colab](https://colab.research.google.com/assets/colab-badg
 
 Task references 
 
-* Image Classification with Transfer Learning 
+* Image Classification with Transfer Learning [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DoranLyong/Awesome-Tensor-Architecture/blob/main/pytorch_reference/simple_reference/04_NN_Development_Reference/01_Image_Classification.ipynb)
 * Sentiment Analysis with Torchtext 
 * Generative Learning - Generation Fashion-MNIST Images with DCGAN 
 

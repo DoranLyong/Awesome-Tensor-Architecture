@@ -9,5 +9,5 @@ Running by [![Open In Colab](https://colab.research.google.com/assets/colab-badg
 * Model Architectures 디자인과 사전학습 모델 적용하는 방법 
 * Custom Loss Functions 
 * Custom Optimizers 
-* Cudatom training, validation, and test loop
+* Custom training, validation, and test loop
 

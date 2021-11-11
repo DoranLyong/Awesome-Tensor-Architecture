@@ -5,10 +5,9 @@ Running by [![Open In Colab](https://colab.research.google.com/assets/colab-badg
 본 예시에서 눈여겨 볼 것 :
 
 * functional version? class version?
-
 * Custom Layers 와 Activations 를 디자인하는 방법 
 * Model Architectures 디자인과 사전학습 모델 적용하는 방법 
 * Custom Loss Functions 
 * Custom Optimizers 
-  
+* Cudatom training, validation, and test loop
 

@@ -1,8 +1,6 @@
 # Attention and the Transformer
 
-
-
-
+Running by  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DoranLyong/Awesome-Tensor-Architecture/blob/main/pytorch_reference/NYU-DL/12-Attention-and-Transformer/01-Attention-and-Transformer.ipynb)
 
 
 

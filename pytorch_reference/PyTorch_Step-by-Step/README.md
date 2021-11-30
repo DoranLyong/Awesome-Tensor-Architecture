@@ -2,5 +2,7 @@
 
 * refer to [this book](https://leanpub.com/pytorch/) 
 
+* recommended from [here](https://youtu.be/2n_uoGOPoVk) 
+
   
 

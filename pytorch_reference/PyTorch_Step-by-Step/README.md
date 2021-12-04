@@ -4,5 +4,7 @@
 
 * recommended from [here](https://youtu.be/2n_uoGOPoVk) 
 
+* examples from [github](https://github.com/dvgodoy/PyTorchStepByStep) 
+
   
 

@@ -1,5 +1,14 @@
 # 작물 잎 사진으로 질병 분류하기 
 
+## Contents 
+
+* [데이터 준비](#데이터 준비)
+* [데이터 구조](#데이터 구조)
+* [실험 설계를 위한 데이터 분할](#실험 설계를 위한 데이터 분할)
+* [데이터셋 및 데이터 로더(dataloader) 생성](#데이터셋 및 데이터 로더(dataloader) 생성)
+* [베이스라인 모델 설계](#베이스라인 모델 설계)
+* [전이 학습 (Transfer Learning)](#전이 학습 (Transfer Learning))
+
 
 
 ## 데이터 준비 
@@ -75,11 +84,27 @@ processed
 필요한 개념과 기능: 
 
 * ```torchvisiondatasets.ImageFolder```  메소드 
-  * 스토리지(storage)상의 데이터셋을 python 환경으로 불러오는 메소드
+  * 스토리지(storage)상의 데이터셋을 PyTorch 환경으로 불러오는 메소드
+  * 여기서 사용되는 dataset은 ```하나의 클래스가 하나의 디렉토리에 대응 됨```. 
+    * 이러한 구조의 데이터셋을 로드할 때는 ```ImageFolder``` 메소드를 사용하면 간단함
+    * (왜?) 디렉토리별 label encoding 을 해당 메소드가 내부적으로 해주기 때문
 
+* ```torch.utils.data.DataLoader``` 
 
+  * PyTorch 환경으로 불러온 dataset을 주어진 조건에 따라 미니 배치 단위로 분리하는 역할 수행 
 
-
+  
 
 ## 베이스라인 모델 설계 
 
+필요한 개념과 기능: 
+
+* 
+
+
+
+## 전이 학습 (Transfer Learning)
+
+<img src="./imgs/fine-tuning-strategy.png" width=640> 
+
+[데이터크기-유사성 그래프 & 각 상황에 따른 Fine-tuning 전략 (source)](https://jeinalog.tistory.com/13)
